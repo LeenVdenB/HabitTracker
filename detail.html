@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
+    <script src="app.js" defer></script>
+    <title>Verkoop ingeven</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Ga terug</a>
+    </nav>
+    <h1>Verkoop invoeren</h1>
+
+    <div>
+      <h2>Beschikbare Voorraad</h2>
+      <p>Hooi: <span id="hayStock">0</span> balen</p>
+      <p>Stro: <span id="strawStock">0</span> balen</p>
+    </div>
+    <div>
+      <a href="#">Voorraad aanpassen</a>
+    </div>
+    <!-- <div>
+      <label for="startHay">Beginvoorraad Hooi:</label>
+      <input type="number" id="startHay" min="0" />
+    </div>
+    <div>
+      <label for="startStraw">Beginvoorraad Stro:</label>
+      <input type="number" id="startStraw" min="0" />
+    </div>
+    <div>
+      <button id="setStock">Voorraad Instellen</button>
+    </div> -->
+
+    <div>
+      <h2>Verkoop Registreren</h2>
+      <div>
+        <label for="person">Aan wie?</label>
+        <input type="text" id="person" />
+      </div>
+      <div>
+        <label for="sellHay">Aantal balen hooi:</label>
+        <input type="number" id="sellHay" />
+      </div>
+      <div>
+        <label for="sellStraw">Aantal balen stro:</label>
+        <input type="number" id="sellStraw" />
+      </div>
+    </div>
+
+    <div>
+      <a class="btn" href="#">Opslaan</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1em;
+  padding: 0;
+}
+
+h1 {
+  display: flex;
+  background-color: #ea9b4b;
+  color: white;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ea9b4b;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
