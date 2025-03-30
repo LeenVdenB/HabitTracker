@@ -24,3 +24,19 @@ h2 {
   padding: 10px;
   border-radius: 5px;
 }
+
+.beheer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+textarea {
+  width: 100px;
+  height: 30px;
+  resize: none;
+}
+
+p {
+  margin: 0;
+}
