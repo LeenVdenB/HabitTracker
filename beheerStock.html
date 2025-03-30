@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
-    <script src="app.js" defer></script>
+
     <title>Beheer stock</title>
   </head>
   <body>
@@ -13,16 +13,21 @@
 
     <h2>Stro</h2>
     <div class="beheer">
-      <textarea name="" id="stroAmount"></textarea>
+      <textarea name="amountS" id="stroAmount"></textarea>
       <p>balen van</p>
-      <textarea name="" id="priceStro"></textarea>
+      <textarea name="priceS" id="priceStro"></textarea>
     </div>
 
     <h2>Hooi</h2>
     <div class="beheer">
-      <textarea name="" id="hooiAmount"></textarea>
+      <textarea name="amountH" id="hooiAmount"></textarea>
       <p>balen van</p>
-      <textarea name="" id="priceHooi"></textarea>
+      <textarea name="priceH" id="priceHooi"></textarea>
     </div>
+    <div>
+      <button id="save">Opslaan</button>
+    </div>
+
+    <script src="app.js" defer></script>
   </body>
 </html>
