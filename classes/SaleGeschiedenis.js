@@ -4,11 +4,11 @@ export default class SaleGeschiedenisView {
     this.container = document.querySelector(containerSelector);
   }
 
-  redner() {
+  render() {
     if (!this.container) return;
 
     let table = document.createElement("table");
-    table.classList.add("Sale-geschiedenis-table");
+    table.classList.add("saleGeschiedenisTable");
 
     let headerRow = document.createElement("tr");
     headerRow.innerHTML = `
