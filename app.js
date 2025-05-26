@@ -43,7 +43,7 @@ let saleGeschiedenisView = new SaleGeschiedenisView(
   saleManager,
   "#saleGeschiedenis"
 );
-SaleGeschiedenisView.render();
+saleGeschiedenisView.render();
 
 if (document.querySelector("#save")) {
   document.querySelector("#save").addEventListener("click", (e) => {
@@ -61,3 +61,13 @@ if (document.querySelector("#save")) {
     alert("voorraad succesvol bijgewerkt");
   });
 }
+
+document.querySelectorAll(".weergave").forEach((weergave) => {
+  let title = weergave.querySelector("h2").textContent.trim();
+  let stockbox = weergave.querySelector(".stockbox");
+  if (title === "Hooi") {
+    stockbox.classList.add("hooiStock");
+  } else if (title === "Stro") {
+    stockbox.classList.add("stroStock");
+  }
+});
