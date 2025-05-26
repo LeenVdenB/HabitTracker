@@ -2,6 +2,7 @@ import Sale from "./classes/Sale.js";
 import SaleManager from "./classes/SaleManager.js";
 import StockItem from "./classes/StockItem.js";
 import StockManager from "./classes/StockManager.js";
+import SaleGeschiedenisView from "./classes/SaleGeschiedenis.js";
 
 let saleManager = new SaleManager();
 saleManager.loadSales();
@@ -38,23 +39,11 @@ if (document.querySelector("#saveSale")) {
   });
 }
 
-let saleGeschiedenisContainer = document.querySelector("#saleGeschiedenis");
-if (saleGeschiedenisContainer) {
-  let sales = saleManager.getSales();
-  let ul = document.createElement("ul");
-
-  sales.forEach((sale) => {
-    let li = document.createElement("li");
-    let saleDateTime = new Date(sale.datum).toLocaleString();
-    li.textContent = `${saleDateTime} - ${sale.klant} kocht ${
-      sale.soldHooi
-    } balen hooi en ${
-      sale.soldStro
-    } balen stro. Totale opbrengst: €${sale.totalPrice.toFixed(2)}`;
-    ul.appendChild(li);
-  });
-  saleGeschiedenisContainer.appendChild(ul);
-}
+let saleGeschiedenisView = new SaleGeschiedenisView(
+  saleManager,
+  "#saleGeschiedenis"
+);
+SaleGeschiedenisView.render();
 
 if (document.querySelector("#save")) {
   document.querySelector("#save").addEventListener("click", (e) => {
