@@ -9,10 +9,27 @@ h1 {
   background-color: #ea9b4b;
   color: white;
   padding: 10px;
+  border-radius: 5px;
 }
 
 h2 {
   font-size: 1em;
+  color: #8a4c0f;
+}
+
+h3 {
+  margin-top: 70px;
+  font-size: 1em;
+}
+
+textarea {
+  width: 100px;
+  height: 30px;
+  resize: none;
+}
+
+p {
+  margin: 0;
 }
 
 .btn {
@@ -29,16 +46,6 @@ h2 {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-textarea {
-  width: 100px;
-  height: 30px;
-  resize: none;
-}
-
-p {
-  margin: 0;
 }
 
 .weergave {
@@ -68,4 +75,42 @@ p {
   border-radius: 10px;
   margin-top: 0.5em;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.saleGeschiedenisTable {
+  width: 100%;
+  font-size: 0.8em;
+  display: table;
+  border-collapse: collapse;
+  text-align: left;
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.saleGeschiedenisTable th,
+.saleGeschiedenisTable td {
+  border: 1px solid #ffffff;
+  padding: 10px;
+}
+
+.saleGeschiedenisTable th {
+  background-color: #ea9b4b;
+}
+
+.saleGeschiedenisTable tr:nth-child(even) {
+  background-color: #ffc89a;
+}
+
+.hooiStock {
+  background-color: #68776b;
+  color: #c6ebd1;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.stroStock {
+  background-color: #ffe5b4;
+  color: #8a4c0f;
+  padding: 10px;
+  border-radius: 10px;
 }
