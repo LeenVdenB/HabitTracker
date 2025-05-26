@@ -10,25 +10,26 @@
   </head>
   <body>
     <nav>
-      <a href="detail.html">Ga terug</a>
+      <a href="detail.html">← Ga terug</a>
     </nav>
     <h1>Beheer stock</h1>
+    <div class="stockContainer">
+      <h2>Stro</h2>
+      <div class="beheer">
+        <textarea name="amountS" id="stroAmount"></textarea>
+        <p>balen van</p>
+        <textarea name="priceS" id="priceStro"></textarea>
+      </div>
 
-    <h2>Stro</h2>
-    <div class="beheer">
-      <textarea name="amountS" id="stroAmount"></textarea>
-      <p>balen van</p>
-      <textarea name="priceS" id="priceStro"></textarea>
-    </div>
-
-    <h2>Hooi</h2>
-    <div class="beheer">
-      <textarea name="amountH" id="hooiAmount"></textarea>
-      <p>balen van</p>
-      <textarea name="priceH" id="priceHooi"></textarea>
-    </div>
-    <div>
-      <button id="save">Opslaan</button>
+      <h2>Hooi</h2>
+      <div class="beheer">
+        <textarea name="amountH" id="hooiAmount"></textarea>
+        <p>balen van</p>
+        <textarea name="priceH" id="priceHooi"></textarea>
+      </div>
+      <div>
+        <button id="save">Opslaan</button>
+      </div>
     </div>
 
     <script type="module" src="app.js" defer></script>
